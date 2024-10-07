@@ -1,0 +1,117 @@
+.kodchasan-regular {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+body{
+    background: linear-gradient(to bottom right, #540BA3  ,#540BA3  ,#DA3D8F ,#DA3D8F );
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+.conteudo{
+    padding-left: 65px;
+}
+.logo{
+    flex-direction: row;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+
+}
+.logo h1{
+    color: white;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 300;
+    margin-bottom: 27px;
+    margin-left: 30px;
+}
+
+.texto h1{
+    font-size: 120px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 700px;
+    
+}
+.conteudo h3{
+    text-align: center;
+    align-items: center ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #FF1E8A;
+    color: white;
+    font-size: 30px;
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.loginBack{
+    background: linear-gradient(to bottom, #DA3D8F  ,#DA3D8F  ,#540BA3 );
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 30%;
+    height: 100%;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+.loginBack h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-left: 30px;
+}
+.loginBack h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding-left: 30px;
+}
+.conta{
+    padding-left: 30px;
+}
+input{
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+}
+.botao{
+    margin-left: 30px;
+    width: 100px;
+    font-family: "Poppins", sans-serif;
+}
+p{
+    margin-left: 30px;
+}
+.shadow-box {
+    width: 300px; /* largura do elemento */
+    height: 200px; /* altura do elemento */
+    background: linear-gradient(to bottom, #DA3D8F  ,#DA3D8F  ,#540BA3 );/* cor de fundo */
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3); /* sombra */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px; /* bordas arredondadas (opcional) */
+}
