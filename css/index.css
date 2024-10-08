@@ -51,7 +51,7 @@ body{
     width: 700px;
     
 }
-.conteudo h3{
+.conteudo a{
     text-align: center;
     align-items: center ;
     font-family: "Poppins", sans-serif;
@@ -59,9 +59,15 @@ body{
     background-color: #FF1E8A;
     color: white;
     font-size: 30px;
-    width: 120px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    width: 160px;
+}
+.conteudo a:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
 }
 .loginBack{
     background: linear-gradient(to bottom, #DA3D8F  ,#DA3D8F  ,#540BA3 );
@@ -78,7 +84,7 @@ body{
 }
 .loginBack h2{
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
     padding-left: 30px;
 }
@@ -94,24 +100,52 @@ input{
     align-items: center;
     gap: 30px;
     width: 90%;
+    font-size: 20px;
+    background-color: #7D2C77;
+    color: white;
+    border: 0;
 }
-.botao{
-    margin-left: 30px;
-    width: 100px;
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.caixa{
     font-family: "Poppins", sans-serif;
+    margin: 10px;
+    height: 70px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.botao{
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 87%;
+    height: 60px;
+    font-family: "Poppins", sans-serif;
+    background-color: #68F0AE;
+    font-weight: 500;
+    color: #053518;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: groove;
+    border: 0;
 }
 p{
     margin-left: 30px;
 }
-.shadow-box {
-    width: 300px; /* largura do elemento */
-    height: 200px; /* altura do elemento */
-    background: linear-gradient(to bottom, #DA3D8F  ,#DA3D8F  ,#540BA3 );/* cor de fundo */
-    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3); /* sombra */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cadastrar{
+    font-weight: 200;
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 10px;
+    text-decoration: none;
     color: white;
-    font-size: 24px;
-    border-radius: 10px; /* bordas arredondadas (opcional) */
+    margin-left: 35px;
+    width: 380px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
 }

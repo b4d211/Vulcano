@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(isset($_SESSION['usuario_id'])){
+  header("location: cadastro.php");
+  exit();
+}
  
 require_once 'includes/config.php';
  
@@ -35,8 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vulcano</title>
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo vulcano.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <h1>Bem vindo de volta!</h1>
   </div>
 
-    <h3>Entrar</h3>
+    <a href="./cadastro.php">Cadastrar</a>
   </div>
 
   <div class="loginBack">
@@ -66,12 +73,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <h2>Login</h2>
       <h3>Preencha os campos abaixo com suas informaçoes</h3>
       <div class="conta">
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" required> <br>
+      <input class="caixa" placeholder="Digite seu email"  type="text" id="email" name="email" required> <br>
       </div>
       <div class="conta">
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required><br>
+      <input class="caixa" placeholder="Digite sua senha" type="password" id="senha" name="senha" required><br>
       </div>
 
       
@@ -80,8 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <?php endif; ?>
 
   
-      <input class="botao" type="submit" value="entrar">
-      <p>Ja tem conta? <a href="cadastro.php">Ir para Cadastro</a></p>
+      <input class="botao" type="submit" value="Acessar">
+      <a class="cadastrar" href="cadastro.php">Criar minha conta</a>
     </form>
   </div>
 </body>
